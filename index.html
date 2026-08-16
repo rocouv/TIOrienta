@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Encuentra tu área de afinidad en tecnología con un test breve y humano." />
+    <title>TI Orienta | Tu siguiente paso en tecnología</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="TI Orienta, inicio">
+        <span class="brand-mark">/</span><span>ti<span class="brand-dot">.</span>orienta</span>
+      </a>
+      <span class="header-note">Explora con intención <span class="header-spark">✦</span></span>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> TEST VOCACIONAL DE TI</p>
+          <h1>Tu lugar en tecnología puede empezar <em>hoy.</em></h1>
+          <p class="hero-text">No necesitas tenerlo todo resuelto. Responde desde lo que te da curiosidad y descubre qué caminos pueden encajar contigo.</p>
+          <button class="button button-primary" data-action="start">Comenzar test <span>→</span></button>
+          <p class="microcopy"><span class="check">✓</span> 8 preguntas · 3 minutos · sin respuestas correctas</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-card art-card-main"><span class="code-label">TU CURIOSIDAD</span><strong>también es<br /><span>una habilidad</span></strong><i>✦</i></div>
+          <div class="art-card art-card-small"><span class="mini-icon">↗</span><span>explora<br />sin prisa</span></div>
+          <div class="art-sticker">para personas<br /><b>reales</b></div>
+        </div>
+      </section>
+
+      <section class="test-shell" id="test" hidden>
+        <div class="test-topline"><span id="question-counter">Pregunta 1 de 8</span><span id="progress-percent">12%</span></div>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="question-layout">
+          <div class="question-intro"><span class="question-number" id="question-number">01</span><p>Elige la opción que más se parece a ti. <strong>No lo pienses demasiado.</strong></p></div>
+          <div class="question-content">
+            <p class="question-kicker" id="question-kicker">PARA EMPEZAR</p>
+            <h2 id="question-title"></h2>
+            <div class="answers" id="answers"></div>
+            <div class="test-actions"><button class="back-button" data-action="back" id="back-button">← Atrás</button><span class="answer-hint">Selecciona una respuesta para continuar</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-shell" id="results" hidden>
+        <div class="results-heading"><p class="eyebrow"><span class="eyebrow-line"></span> TU MAPA DE AFINIDAD</p><h2>Hay más de una forma<br />de entrar a <em>TI.</em></h2><p>Este resultado no te encasilla: te da una dirección para comenzar a explorar.</p></div>
+        <div class="result-grid">
+          <article class="primary-result"><div class="result-tag">TU AFINIDAD PRINCIPAL</div><div class="result-icon" id="result-icon">✦</div><h3 id="result-title"></h3><p id="result-description"></p><div class="fit-note"><span>◎</span><div><strong>Por qué puede encajar contigo</strong><p id="result-fit"></p></div></div><div class="first-step"><span class="step-label">PRIMER PASO SUGERIDO</span><p id="result-step"></p></div></article>
+          <aside class="score-card"><div class="score-card-head"><span>Tu panorama</span><span class="mono">8 respuestas</span></div><div id="score-bars"></div><div class="score-legend"><span class="legend-dot"></span> afinidad estimada según tus respuestas</div></aside>
+        </div>
+        <div class="results-footer"><button class="button button-primary" data-action="restart">Repetir test <span>↻</span></button><button class="button button-quiet" data-action="share">Compartir resultado <span>↗</span></button><span class="share-status" id="share-status" role="status"></span></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>ti.orienta</span><span>Una brújula, no una etiqueta.</span></footer>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
