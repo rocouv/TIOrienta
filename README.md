@@ -1,6 +1,6 @@
 # TI Orienta
 
-Test vocacional breve para descubrir áreas de afinidad dentro de tecnología.
+Test vocacional breve para descubrir rutas concretas dentro de tecnología: frontend, backend, UI/UX, datos, docencia tecnológica y soporte IT.
 
 ## Desarrollo
 
